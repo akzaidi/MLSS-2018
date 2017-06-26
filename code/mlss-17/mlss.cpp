@@ -79,7 +79,8 @@ void TMLSS::GenerateNetwork(const int& TNetwork, const int& NNodes, const int& N
 	// TODO: other type of random graph
 	case 2:
 		{
-			printf("Other random graph\n");
+			printf("Preferential attachment graph\n");
+			PUNGraph G = TSnap::GenPrefAttach(1000, 3);
 			break;
 		}
 	// TODO END
