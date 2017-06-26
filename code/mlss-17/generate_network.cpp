@@ -35,10 +35,10 @@ int main(int argc, char* argv[]) {
   PIntFltNEDNet PNetwork = TIntFltNEDNet::New(); TIntStrH NetworkNodeLabels;
 
   // TODO: modify code to create network in Fig. 2
-  for (int i=0; i<10; i++) {
+  for (int i=0; i<30; i++) {
 	  PNetwork->AddNode(i, TInt::Rnd.GetUniDevInt(100));
 	  NetworkNodeLabels.AddDat(i) = TStr::Fmt("%d (%d)", i, PNetwork->GetNDat(i).Val); }
-  for (int i=0; i<10; i++) {
+  for (int i=0; i<18; i++) {
 	  for (int j=i+1; j<10; j++) { PNetwork->AddEdge(i, j, TFlt::Rnd.GetUniDev()); } // DAG
   }
   // TODO: END
