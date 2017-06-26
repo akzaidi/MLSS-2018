@@ -11,8 +11,8 @@ int main(int argc, char* argv[]) {
   PNGraph PGraph = TNGraph::New(); TIntStrH GraphNodeLabels;
 
   // TODO: modify code to create double star network in Fig. 1
-  for (int i=0; i<10; i++) { PGraph->AddNode(i); GraphNodeLabels.AddDat(i) = TStr::Fmt("%d", i); }
-  for (int i=1; i<10; i++) { PGraph->AddEdge(i, 0); } // star
+  for (int i=0; i<32; i++) { PGraph->AddNode(i); GraphNodeLabels.AddDat(i) = TStr::Fmt("%d", i); }
+  for (int i=1; i<18; i++) { PGraph->AddEdge(i, 0); } // star
   // TODO: END
 
   printf("\nDirected graph (%d nodes, %d edges)\n", PGraph->GetNodes(), PGraph->GetEdges());
